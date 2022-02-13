@@ -1,2 +1,2 @@
 # 100-Problems-In-Cpp
-## updated every Day INSHAALLAH
+## i will update it every day inshaallah
