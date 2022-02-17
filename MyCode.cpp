@@ -211,10 +211,8 @@ int main()
 
 */
 
-
 // problem #9
-//Write C++ Program to convert a decimal number to binary number
-
+// Write C++ Program to convert a decimal number to binary number
 
 /*
 
@@ -247,6 +245,141 @@ int main()
 
 */
 
+///////////////////////////////////////////////////////////////////
+
+// problem #10
+// Write program to display number in hexadecimal form
+
+/*
+int main()
+{
+    int x;
+    cout << "Enter an integer : " << endl;
+    cin >>x;
+    // hex keyword displays a number in hexadecimal form.
+    cout << "x=" << hex << x << endl;
+    cin.get();
+    return 0;
+}
+
+*/
+
+///////////////////////////////////////////////////////////////////
+
+// problem #11
+// Write a program to swap to numbers using a third variable called temp
+
+/*
+
+void swap(int &num1,int &num2){
+    int temp=num1;
+    num1=num2;
+    num2=temp;
+}
+
+int main(){
+    int num1 =5;
+    int num2=10;
+    cout<<"num1 :"<<num1<<", num2: "<<num2<<endl;
+    swap(num1,num2);
+    cout<<"num1 :"<<num1<<", num2: "<<num2<<endl;
+}
+
+*/
+
+// problem #12
+// Write a c++ Program to print ODD numbers from 1 to 10
+
+/*
+void printOddNumber(){
+    for (int i = 0; i < 10; i++)
+    {
+        if(i%2!=0 ){
+            cout<<i<<endl;
+        }
+    }
+}
+
+
+int main(){
+    printOddNumber();
+}
+
+*/
+
+///////////////////////////////////////////////////////////////////
+
+// problem #13
+// Write a c++ Program to print natural numbers from 1 to 10 in Reverse
+
+/*
+int main(){
+    for (int i = 10; i>0; i--)
+    {
+        cout<<i<<endl;
+    }
+
+}
+
+*/
+
+///////////////////////////////////////////////////////////////////
+
+// problem #14
+// Write a c++ Program to accept a string in any case and print it by another case.
+
+/*
+
+int main()
+{
+    char s[30]="AHMED SAAD";
+
+    for (int i = 0; i <= strlen(s); i++)
+    {
+
+        if (s[i] >= 65 && s[i] <= 92)
+        {
+            s[i] = s[i] + 32;
+        }
 
 
 
+
+        //if you need to convert from lower case to upper case you can use it
+        //if (s[i] >= 97 && s[i] <= 122)
+        //{
+        //    s[i] = s[i] - 32;
+        //}
+
+
+    }
+    cout << "The entered string in uppercase: " << s;
+    return 0;
+}
+
+*/
+
+///////////////////////////////////////////////////////////////////
+
+// problem #15
+// Write C++ Program to check whether a given number is perfect or not
+
+int main()
+{
+    int i, num, div, sum = 0;
+    cout << "Enter the number to be checked : ";
+    cin >> num;
+    for (i = 1; i < num; i++)
+    {
+        div = num % i;
+        if (div == 0)
+            sum = sum + i;
+    }
+    if (sum == num)
+        cout << "\n"
+             << num << " is a perfect number.";
+    else
+        cout << "\n"
+             << num << " is not a perfect number.";
+    return 0;
+}
