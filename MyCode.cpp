@@ -364,6 +364,7 @@ int main()
 // problem #15
 // Write C++ Program to check whether a given number is perfect or not
 
+/*
 int main()
 {
     int i, num, div, sum = 0;
@@ -383,3 +384,124 @@ int main()
              << num << " is not a perfect number.";
     return 0;
 }
+
+
+*/
+
+////////////////////////////////////////////////////////////
+
+// problem #16
+// Write C++ Program to print table of any number
+
+/*
+
+void printTableOf(int number){
+    for (int i = 1; i <= 10; i++)
+    {
+        cout<<number<<"*"<<i<<"= "<<(number*i)<<endl;
+    }
+
+}
+
+int main(){
+    printTableOf(5);
+}
+
+*/
+
+//////////////////////////////////////////////////////////////////
+
+// problem #17
+// Write C++ Program to read ‘n’ number and print them in matrix terms in all orders.
+
+
+
+// problem #18
+// Write C++ Program to accept two numbers and print the sum of given two numbers by using pointers
+
+/*
+
+void printSumOfTwoNumbersUsingPointers(int* num1,int* num2){
+    cout<<(*num1 + *num2)<<endl;
+}
+
+
+int main(){
+    int num1=5;
+    int num2=8;
+
+    printSumOfTwoNumbersUsingPointers(&num1,&num2);
+
+}
+
+*/
+
+// problem #19
+// Write a c++ Program to accept a string in upper case and print it by lower case
+
+/*
+void EnterAnUpperString(string text){
+    for (int i = 0; i <= text.length(); i++)
+    {
+        if(text[i]>= 65 &&text[i]<= 92){
+            text[i] +=32;
+        }
+    }
+    cout<<text<<endl;
+
+}
+
+int main(){
+    EnterAnUpperString("AHMED SAAD");
+}
+
+
+*/
+
+// problem #20
+// Write a c++ Program to accept any single digit number and print it in words.
+
+
+/*
+void EnterANumber(int number)
+{
+
+    switch (number)
+    {
+    case 0:
+    {
+        cout << "ZERO" << endl;
+        break;
+    }
+
+    case 1:
+    {
+        cout << "One" << endl;
+        break;
+    }
+
+    case 2:
+    {
+        cout << "Two" << endl;
+        break;
+    }
+    case 3:
+    {
+        cout << "Three" << endl;
+        break;
+    }
+    case 4:
+    {
+        cout << "Four" << endl;
+        break;
+    }
+    }
+}
+
+int main()
+{
+    EnterANumber(3);
+}
+
+
+*/
